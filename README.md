@@ -24,6 +24,6 @@ dotnet add package IntuneWinFile
 
 ## Documentation
 
-Please see documentation string in [IntuneWinFile.cs](IntuneWin/IntuneWinFile.cs), [IntuneWin.Data](IntuneWin/Data) and [IntuneWin.exceptions](IntuneWin/Exceptions) namespaces.
+Please see documentation string in [IntuneWinFile.cs](IntuneWin/IntuneWinFile.cs), [IntuneWin.Data](IntuneWin/Data) and [IntuneWin.Exceptions](IntuneWin/Exceptions) namespaces.
 
 You can also check [tests](IntuneWin.Tests/IntuneWinTests.cs) for basic usage examples.
