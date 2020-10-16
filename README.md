@@ -19,7 +19,7 @@ So, Microsoft made a simple container format, which is in fact a ZIP archive tha
 ### Install Package
 
 ```cmd
-dotnet add package IntuneWin
+dotnet add package IntuneWinFile
 ```
 
 ## Documentation
