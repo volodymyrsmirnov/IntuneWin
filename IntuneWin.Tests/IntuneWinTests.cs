@@ -10,7 +10,7 @@ namespace IntuneWin.Tests
         [Test]
         public void OpenFileCreatedExternally()
         {
-            using var file = new IntuneWinFile(@"Samples\sample.intunewin");
+            using var file = new IntuneWinFile(@"sample.intunewin");
 
             Assert.IsNotEmpty(file.ApplicationInfo.Name);
             Assert.IsNotEmpty(file.ApplicationInfo.FileName);
@@ -21,7 +21,7 @@ namespace IntuneWin.Tests
         [Test]
         public async Task ExtractContentFromFileCreatedExternally()
         {
-            using var file = new IntuneWinFile(@"Samples\sample.intunewin");
+            using var file = new IntuneWinFile(@"sample.intunewin");
 
             const string contentFileName = "extracted-sample-content.intunewin";
             
@@ -33,7 +33,7 @@ namespace IntuneWin.Tests
             
             Assert.True(FilesAreEqual(
                 new FileInfo("extracted-sample-content.intunewin"), 
-                new FileInfo(@"Samples\sample.zip")));
+                new FileInfo(@"sample.zip")));
         }
 
         [Test]
@@ -42,7 +42,7 @@ namespace IntuneWin.Tests
             using var file = new IntuneWinFile("created.intunewin", "Lorem", "LoremIpsumDolorSetAmet", 
                 "lorem.intunewin", "file.txt");
 
-            await file.EmbedContentFileAsync(@"Samples\sample.zip");
+            await file.EmbedContentFileAsync(@"sample.zip");
             
             Assert.IsNotEmpty(file.ApplicationInfo.Name);
             Assert.IsNotEmpty(file.ApplicationInfo.FileName);
@@ -58,7 +58,7 @@ namespace IntuneWin.Tests
             
             Assert.True(FilesAreEqual(
                 new FileInfo("extracted-created-content.intunewin"), 
-                new FileInfo(@"Samples\sample.zip")));
+                new FileInfo(@"sample.zip")));
         }
         
         public static bool FilesAreEqual(FileInfo left, FileInfo right) =>

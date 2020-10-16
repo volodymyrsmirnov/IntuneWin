@@ -16,10 +16,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="Samples\sample.zip">
+      <None Update="sample.intunewin">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="Samples\sample.intunewin">
+      <None Update="sample.zip">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>

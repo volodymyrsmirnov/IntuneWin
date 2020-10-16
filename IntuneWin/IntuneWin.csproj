@@ -4,6 +4,18 @@
         <TargetFramework>netstandard2.0</TargetFramework>
         <LangVersion>latest</LangVersion>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <Title>IntuneWin File</Title>
+        <Authors>Volodymyr Smirnov</Authors>
+        <Description>Library to programmatically create and extract IntuneWin files.</Description>
+        <Copyright>Volodymyr Smirnov</Copyright>
+        <PackageProjectUrl>https://github.com/mindcollapse/IntuneWin</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/mindcollapse/IntuneWin/blob/master/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/mindcollapse/IntuneWin</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>intune;intunewin;microsoft</PackageTags>
+        <Company>Volodymyr Smirnov</Company>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>1.0.0</FileVersion>
     </PropertyGroup>
 
 </Project>
